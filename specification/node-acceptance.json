@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "basis": "Prepare exact edits for a function movement between distinct declared endpoints.",
+  "cases": [
+    {
+      "id": "FUNCTION-MOVEMENT-REFUSAL",
+      "role": "source",
+      "kind": "refusal",
+      "claim": "A movement whose source and target are the same is refused.",
+      "file": "test/function-movement.test.mjs",
+      "test": "refuses same source and target"
+    },
+    {
+      "id": "FUNCTION-MOVEMENT-QUICKSTART",
+      "role": "consumer",
+      "kind": "example",
+      "claim": "An installed caller receives two bounded edits for a separate receiver.",
+      "file": "examples/quickstart.test.mjs"
+    }
+  ]
+}

@@ -8,3 +8,7 @@
 <!-- 561-group-standards:badges:end -->
 
 Content-addressed deterministic function-movement artifact material; it has no transport, custody, observation, or write authority.
+
+## Acceptance
+
+Run `npm test` for the source suite. See the [API reference](docs/API.md) and [runnable consumer example](examples/quickstart.test.mjs).

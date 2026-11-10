@@ -12,7 +12,8 @@
   "scripts": {
     "check": "node --check src/function-movement.mjs",
     "test": "node --test test/function-movement.test.mjs",
-    "verify": "npm run check && npm test"
+    "verify": "npm run check && npm test",
+    "test:consumer": "node --test examples/quickstart.test.mjs"
   },
   "engines": {
     "node": ">=22"
