@@ -1,4 +1,4 @@
-import { sha256Digest, sha256Hex } from "@red-cup-engineering/semiotic-content-address-system";
+import { sha256Digest, sha256Hex, semanticHex } from "@red-cup-engineering/semiotic-content-address-system";
 
 const identity = (value, label) => {
   if (typeof value !== "string" || value.length === 0 || value.includes("\n")) {
@@ -56,7 +56,7 @@ export function prepareFunctionMovement({
   return {
     operation: "prepare-function-movement",
     movement: { sourceSemioverse, sourcePackage, sourceFile, targetSemioverse, targetPackage, targetFile, functionName },
-    artifactSetDigest: sha256Digest(JSON.stringify(artifacts)),
+    artifactSetDigest: `sha256:${semanticHex(artifacts)}`,
     artifacts,
     nextActuator: "accepted-software-delivery-receiver",
     writeAuthority: "receiver-only",
